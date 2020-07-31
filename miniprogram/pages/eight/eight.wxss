@@ -1,0 +1,6 @@
+/* miniprogram/pages/eight/eight.wxss */
+
+.canvas {
+  width: 375px;
+  height: 300px;
+}

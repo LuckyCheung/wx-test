@@ -1,0 +1,10 @@
+<view class='container'>
+  <view class='nav'>
+    <view class="nav-item" wx:for='{{navList}}' wx:key='to' bindtap="onJump" data-to="{{item.to}}" data-name="{{item.name}}">
+      <view class='itme-bg' style='background-color: {{item.color}}'>
+        <i class="icon iconfont {{item.img}}"></i>
+      </view>
+      <view class='item-txt'>{{item.name}}</view>
+    </view>
+  </view>
+</view>

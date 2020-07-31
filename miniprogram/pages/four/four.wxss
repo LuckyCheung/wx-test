@@ -1,0 +1,19 @@
+.canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 100%;
+}
+
+.share-canvas {
+  width: 700rpx;
+  height: 420rpx;
+  background: #f0f0f0;
+  margin-bottom: 40rpx;
+  font-size: 32rpx;
+}
+
+.txt {
+  color: red;
+}

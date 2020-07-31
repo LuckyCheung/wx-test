@@ -1,0 +1,41 @@
+<view class='container' wx:if="{{isShowPage}}">
+
+  <view class="add">
+    <image src='/assets/plus.png'></image>
+    <input placeholder='呃，做点什么好...' bindinput='write' bindconfirm='add' value='{{thingName}}'></input>
+  </view>
+
+  <block wx:if='{{things.length}}'>
+    <view class='list'>
+      <view class='list-item' wx:for='{{things}}' wx:key='localID'>
+        <view class='list-item-left' bindtap='select' data-index='{{index}}'>
+          <icon type='{{item.status ? "success" : "circle"}}' size='18'></icon>
+        </view>
+        <view class='list-item-center'>
+          <input class='{{item.status ? "del" : ""}}' bindconfirm='modification' bindblur="modification" value='{{item.name}}' data-index='{{index}}'></input>
+        </view>
+        <view class='list-item-right' bindtap='del' data-index='{{index}}'>
+          <icon type='clear' size='18'></icon>
+        </view>
+      </view>
+    </view>
+    <view class='box'></view>
+  </block>
+  <block wx:else>
+    <view class='welcome'>
+      <view class='welcome-title'>寂寞!</view>
+      <view class='welcome-content'>人生已经没有了目标</view>
+    </view>
+  </block>
+
+  <view class='control' wx:if='{{things.length}}'>
+    <button size="mini" bindtap='toggle' plain type='primary'>切换</button>
+    <button size="mini" bindtap='clear' plain type='warn'>清除</button>
+    <button size="mini" bindtap='sync' plain type='default'>同步</button>
+    <view class="control-unfinished">
+      <text class="color-red">{{finish}}</text>
+      <text class="color-666">个进行中</text>
+    </view>
+  </view>
+
+</view>

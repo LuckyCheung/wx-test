@@ -1,0 +1,7 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="share-canvas share-canvas1">
+    <view class="txt draw_canvas" data-type="text" data-text="这是一段无边距文字">这是一段无边距文字</view>
+  </view>
+  <canvas canvas-id="canvas1" class="share-canvas"></canvas>
+</view>

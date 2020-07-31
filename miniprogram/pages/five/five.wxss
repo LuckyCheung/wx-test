@@ -1,0 +1,65 @@
+/* pages/five/five.wxss */
+
+.container {
+  position: relative;
+}
+
+.checkerboard {
+  margin: 150rpx 30rpx 0;
+  height: 700rpx;
+}
+
+.checkerboard > view {
+  width: 100%;
+  height: 100%;
+}
+
+.checkerboard-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60rpx;
+  color: #fff;
+  background-color: #8ac6d1;
+}
+
+.checkerboard-start {
+  display: flex;
+  flex-direction: column;
+  border: 2rpx solid #000;
+  background-color: #000;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.cell {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rpx;
+  color: #ccc;
+  background-color: #fff;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50rpx;
+}
+
+.btn button {
+  font-size: 36rpx;
+  background-color: #8ac6d1;
+}
+
+.x {
+  color: red;
+}
+
+.o {
+  color: blue;
+}

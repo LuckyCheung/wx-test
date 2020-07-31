@@ -1,0 +1,32 @@
+/* -------------nav--------------- */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin-top: 20rpx;
+}
+
+.itme-bg {
+  width: 88rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.itme-bg .icon {
+  font-size: 44rpx;
+  color: #fff;
+}
+
+.item-txt {
+  margin-top: 16rpx;
+  font-size: 26rpx;
+}

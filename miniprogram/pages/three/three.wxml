@@ -1,0 +1,12 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="canvas">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ec}}"></ec-canvas>
+  </view>
+  <datepicker value="{{solar}}" bindchange="bindSolarChange">
+    <button type="default">公历</button>
+  </datepicker>
+  <datepicker value="{{lunar}}" chinese="{{true}}" bindchange="bindLunarChange">
+    <button type="default" class="weui-btn">农历</button>
+  </datepicker>
+</view>

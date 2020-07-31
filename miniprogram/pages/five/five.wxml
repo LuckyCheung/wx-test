@@ -1,0 +1,19 @@
+<!--pages/five/five.wxml-->
+<view class="container">
+  <view class="checkerboard">
+    <view class="checkerboard-end" wx:if="{{!isStart}}">
+      <view class="no-start">请点击开始按钮</view>
+    </view>
+    <view class="checkerboard-start" wx:else catchtap="placed">
+      <view class="row" wx:for="{{points}}" wx:key="item.index">
+        <view class="cell {{points && points[index] && points[index][i] && points[index][i].type ? points[index][i].type === 1 ? 'x' : 'o' : ''}}" style="fontsize: {{300 - size * 50}}rpx;" wx:for="{{points[index]}}" wx:for-index="i" wx:for-item="n" wx:key="i"
+          data-y="{{index}}" data-x="{{i}}">{{points && points[index] && points[index][i] && points[index][i].type ? points[index][i].type === 1 ? 'X' : 'O' : ''}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="btn">
+    <button bindtap="start" type="primary" size="mini">开始</button>
+    <button bindtap="replay" type="primary" size="mini">重来</button>
+  </view>
+</view>

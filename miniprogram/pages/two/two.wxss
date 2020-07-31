@@ -1,0 +1,130 @@
+/**index.wxss**/
+
+.container {
+  padding: 20rpx;
+  border-top: 1rpx solid #ccc;
+}
+
+/* ---------------add---------------  */
+
+.add {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  padding: 0 20rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx #ccc;
+}
+
+.add image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.add input {
+  flex: 1;
+  font-size: 32rpx;
+}
+
+/* ---------------list---------------  */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx #ccc;
+  border: 1rpx solid #ddd;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.list-item-left {
+  display: flex;
+  align-items: center;
+  width: 60rpx;
+  padding-left: 20rpx;
+}
+
+.list-item-center {
+  flex: 1;
+  padding: 20rpx 0;
+  font-size: 36rpx;
+}
+
+.list-item-right {
+  display: flex;
+  align-items: center;
+  width: 60rpx;
+  padding-left: 20rpx;
+}
+
+.list-item-center input {
+  font-size: 36rpx;
+  color: #666;
+}
+
+.list view:last-child {
+  border-bottom: none;
+}
+
+/* ---------------control---------------  */
+
+.control {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 750rpx;
+  height: 100rpx;
+  background-color: #fff;
+  box-shadow: 0 -8rpx 10rpx 0 rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.control-unfinished {
+  margin-right: 40rpx;
+}
+
+/* ---------------welcome---------------  */
+
+.welcome {
+  text-align: center;
+  margin-top: 300rpx;
+}
+
+.welcome-title {
+  font-size: 80rpx;
+}
+
+.welcome-content {
+  margin-top: 50rpx;
+  color: #666;
+}
+
+/* ---------------other---------------  */
+
+.list-item-center input.del {
+  text-decoration: line-through;
+}
+
+.box {
+  height: 110rpx;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-666 {
+  font-size: 28rpx;
+  color: #000;
+}

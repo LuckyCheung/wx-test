@@ -1,0 +1,27 @@
+<view class="container">
+  <view>
+    <input value="{{updateAccid}}" placeholder="账号" data-btn='updateAccid' bindinput="inputTxT"></input>
+    <input value="{{updateToken}}" placeholder="密码" data-btn='updateToken' bindinput="inputTxT"></input>
+    <input value="{{updateName}}" placeholder="名字" data-btn='updateName' bindinput="inputTxT"></input>
+    <button bindtap="update">更新IM</button>
+  </view>
+  <view>
+    <input value="{{come}}" placeholder="谁的历史" data-btn='come' bindinput="inputTxT"></input>
+    <input value="{{to}}" placeholder="交流对象" data-btn='to' bindinput="inputTxT"></input>
+    <button bindtap="getHistory">获取历史</button>
+  </view>
+  <view>
+    <input value="{{registerAccid}}" placeholder="账号" data-btn='registerAccid' bindinput="inputTxT"></input>
+    <input value="{{registerToken}}" placeholder="密码" data-btn='registerToken' bindinput="inputTxT"></input>
+    <input value="{{registerName}}" placeholder="名字" data-btn='registerName' bindinput="inputTxT"></input>
+    <input value="{{registerIcon}}" placeholder="头像" data-btn='registerIcon' bindinput="inputTxT"></input>
+    <button bindtap="register">注册</button>
+  </view>
+  <view>
+    <input value="{{startAccid}}" placeholder="账号" data-btn='startAccid' bindinput="inputTxT"></input>
+    <input value="{{startToken}}" placeholder="密码" data-btn='startToken' bindinput="inputTxT"></input>
+    <input value="{{startChatTo}}" placeholder="聊天对象" data-btn='startChatTo' bindinput="inputTxT"></input>
+    <button bindtap="start">开始聊天</button>
+  </view>
+
+</view>

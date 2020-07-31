@@ -1,0 +1,4 @@
+<!--miniprogram/pages/eight/eight.wxml-->
+<view>
+  <canvas class="canvas" canvas-id="canvas1" bindtouchstart="touchHandler"></canvas>
+</view>

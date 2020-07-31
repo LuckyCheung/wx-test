@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/one/one",
+    "pages/two/two",
+    "pages/three/three",
+    "pages/four/four",
+    "pages/five/five",
+    "pages/six/six",
+    "pages/seven/seven",
+    "pages/room/room",
+    "pages/eight/eight"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
