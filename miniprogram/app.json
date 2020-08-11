@@ -9,7 +9,8 @@
     "pages/six/six",
     "pages/seven/seven",
     "pages/room/room",
-    "pages/eight/eight"
+    "pages/eight/eight",
+    "pages/nine/nine"
   ],
   "sitemapLocation": "sitemap.json",
   "style": "v2"

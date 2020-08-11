@@ -1,0 +1,19 @@
+<!--miniprogram/pages/nine/nine.wxml-->
+<view class="container">
+	<view class="a">
+		<form bindsubmit="formSubmit">
+			<view class="c">
+				<text>宽度：</text>
+				<input value="{{width}}" type="number" name="width"></input>
+			</view>
+			<view class="c">
+				<text>高度：</text>
+				<input value="{{height}}" type="number" name="height"></input>
+			</view>
+			<button formType="submit">确定</button>
+		</form>
+	</view>
+	<view class="b">
+		<image style="width: {{width}}px; height: {{height}}px;" src="https://pic.centanet.com/guangzhou/postimage/xinfang/20191212/ddd23cd1aee705209e1f7b4411ebc2a8_180x130_c.jpg"></image>
+	</view>
+</view>

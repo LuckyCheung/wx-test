@@ -18,14 +18,7 @@ Page({
     getOpenID: null,
   },
 
-  onLoad: function() {
-    wx.setNavigationBarColor({
-      frontColor: '#ffffff',
-      backgroundColor: options.color,
-    })
-    wx.setNavigationBarTitle({
-      title: options.name,
-    })
+  onLoad: function (options) {
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -64,7 +57,7 @@ Page({
     })
   },
 
-  getOpenID: async function() {
+  getOpenID: async function () {
     if (this.openid) {
       return this.openid
     }
@@ -81,7 +74,7 @@ Page({
     return result.openid
   },
 
-  onGetUserInfo: function(e) {
+  onGetUserInfo: function (e) {
     if (!this.logged && e.detail.userInfo) {
       this.setData({
         logged: true,
