@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "test": "./com/test/test",
+    "painter": "/libs/painter/painter"
+  }
+}

@@ -38,6 +38,10 @@ Page({
       name: "测试",
       img: "iconxingqiu",
       to: "/pages/nine/nine"
+    }, {
+      name: "测试",
+      img: "iconqiandai",
+      to: "/pages/ten/ten"
     }]
   },
 

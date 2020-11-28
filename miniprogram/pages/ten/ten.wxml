@@ -1,0 +1,4 @@
+<!--miniprogram/pages/ten/ten.wxml-->
+<view class="container">
+  <painter palette="{{paintPallette}}"></painter>
+</view>

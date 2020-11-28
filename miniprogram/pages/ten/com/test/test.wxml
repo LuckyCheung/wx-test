@@ -1,0 +1,2 @@
+<!--pages/ten/com/test.wxml-->
+<text>{{testa}}</text>
